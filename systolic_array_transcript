@@ -1,0 +1,59 @@
+couldn't open "transcript": permission denied
+# Reading C:/ProgramData/App-V/2191B702-5279-4048-91BA-BCF8F2A20B49/3C5B5D32-C303-48A2-8738-F357EDE80167/Root/tcl/vsim/pref.tcl
+# //  ModelSim SE 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile I:/ece554/miniproject3_verilog/tpumac.sv
+# Loading project miniproject3
+# Compile of systolic_array.sv was successful.
+# Compile of systolic_array_tb.sv was successful.
+# Compile of systolic_array_tc.svh was successful.
+# Compile of tpumac.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -novopt work.systolic_array_tb
+# vsim -gui I:\ece554\miniproject3_verilog\tpumac.sv 
+# Start time: 18:57:58 on Sep 20,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing I:/ece554/miniproject3_verilog/work.systolic_array_tb
+# Refreshing I:/ece554/miniproject3_verilog/work.systolic_array_tb_sv_unit
+# Loading sv_std.std
+# Loading work.systolic_array_tb_sv_unit
+# Loading work.systolic_array_tb
+# Refreshing I:/ece554/miniproject3_verilog/work.systolic_array
+# Loading work.systolic_array
+# Refreshing I:/ece554/miniproject3_verilog/work.tpumac
+# Loading work.tpumac
+# SymInitialize: The parameter is incorrect.
+# 
+# 
+run -all
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# No errors, testcase passed
+# 
+# ** Note: $stop    : I:/ece554/miniproject3_verilog/systolic_array_tb.sv(158)
+#    Time: 6105 ns  Iteration: 1  Instance: /systolic_array_tb
+# Break in Module systolic_array_tb at I:/ece554/miniproject3_verilog/systolic_array_tb.sv line 158
