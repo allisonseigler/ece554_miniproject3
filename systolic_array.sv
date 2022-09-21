@@ -13,21 +13,19 @@ module systolic_array
    output signed [BITS_C-1:0] Cout [DIM-1:0]
    );
    
-   logic [DIM-1:0] WrEnVector;
    logic signed [BITS_AB-1:0] A_int [DIM-1:0][DIM-1:0]; //[length] A_int [row#][column#]
    logic signed [BITS_AB-1:0] B_int [DIM-1:0][DIM-1:0];
-   logic siged [BITS_C-1:0] Cout_int [DIM-1:0][DIM-1:0];
+   logic signed [BITS_C-1:0] Cout_int [DIM-1:0][DIM-1:0];
    
    
 
    genvar i, j;
    generate 
       for (i = 0; i <DIM; i++) begin //rows
-         assign WrEnVector[i] = (Crow == i) ? WrEn : 0;
          for (j = 0; j < DIM; j++) begin //columns
-            tpumac (.clk(clk), 
+            tpumac TPUMAC0 (.clk(clk), 
                     .rst_n(rst_n), 
-                    .WrEn(WrEnVector[i]), 
+                    .WrEn((Crow == i) ? WrEn : 1'b0), 
                     .en(en), 
                     .Ain((j == 0)? A[i] : A_int[i][j-1]), 
                     .Aout(A_int[i][j]),
@@ -42,6 +40,5 @@ module systolic_array
    assign Cout = Cout_int[Crow];
    
 endmodule
-
                          
    
